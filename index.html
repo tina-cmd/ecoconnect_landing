@@ -19,7 +19,7 @@
 <body class="bg-gray-50">
 
   <!-- Simple Header -->
-  <header class="bg-white py-4 shadow-sm">
+  <header class="bg-white py-4 shadow-md">
     <div class="max-w-6xl mx-auto px-4 flex justify-between items-center">
       <div class="flex items-center">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-teal-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -27,41 +27,39 @@
         </svg>
         <span class="ml-2 text-xl font-bold text-gray-800">EcoConnect</span>
       </div>
-      <a href="#demo" class="bg-teal-500 text-white px-5 py-2 rounded-full font-medium btn-hover">
-        Try Free Demo
-      </a>
+      <a href="#demo" class="bg-teal-500 text-white px-5 py-2 rounded-full font-medium btn-hover">Try Free Demo</a>
     </div>
   </header>
 
-  <!-- Hero Section with Clear Value Prop -->
+  <!-- Hero Section -->
   <section class="hero-gradient text-white py-16 md:py-24 px-4 text-center">
     <div class="max-w-3xl mx-auto">
-      <h1 class="text-3xl md:text-4xl font-bold mb-6 leading-tight">
-        Experience Caraga's Wonders<br>Before You Visit
-      </h1>
+      <h1 class="text-3xl md:text-4xl font-bold mb-6 leading-tight">Experience Caraga's Wonders<br>Before You Visit</h1>
       <p class="text-xl mb-8 opacity-90">
         Immersive 360° VR tours of waterfalls, rainforests, and cultural treasures - helping you plan the perfect trip.
       </p>
       <div class="flex flex-col sm:flex-row justify-center gap-4">
-        <a href="#tours" class="bg-white text-teal-600 px-8 py-3 rounded-full font-bold btn-hover">
-          Explore Tours
-        </a>
-        <a href="#demo" class="bg-black bg-opacity-20 text-white px-8 py-3 rounded-full font-bold btn-hover border border-white border-opacity-30">
-          Watch Demo
-        </a>
+        <a href="#tours" class="bg-white text-teal-600 px-8 py-3 rounded-full font-bold btn-hover">Explore Tours</a>
+        <a href="#demo" class="bg-black bg-opacity-20 text-white px-8 py-3 rounded-full font-bold btn-hover border border-white border-opacity-30">Watch Demo</a>
       </div>
     </div>
   </section>
 
-  <!-- Video Demo Section -->
-  <section class="py-16 px-4 bg-white" id="demo">
-    <div class="max-w-4xl mx-auto">
-      <h2 class="text-2xl md:text-3xl font-bold text-center mb-2">How It Works</h2>
-      <p class="text-gray-600 text-center mb-8 max-w-2xl mx-auto">
+  <!-- Enhanced Video Demo Section -->
+  <section class="relative py-16 px-4 bg-white" id="demo">
+    <div class="absolute inset-0 bg-gradient-to-r from-teal-500 via-teal-400 to-teal-300 opacity-40"></div>
+    <div class="max-w-full mx-auto relative z-10">
+      <h2 class="text-2xl md:text-3xl font-bold text-center text-white mb-4">How It Works</h2>
+      <p class="text-lg md:text-xl text-center text-white opacity-80 mb-8 max-w-2xl mx-auto">
         See our VR technology in action with this sample tour of Tinuy-an Falls
       </p>
-      <div class="aspect-w-16 aspect-h-9 bg-gray-100 rounded-xl overflow-hidden shadow-lg">
-        <iframe src="src/13560564_3840_2160_60fps.mp4" title="EcoConnect VR Demo" class="w-full h-full" allowfullscreen></iframe>
+      <div class="relative w-full h-[60vh] md:h-[80vh] bg-gray-100 rounded-xl overflow-hidden shadow-lg">
+        <iframe src="src/13560564_3840_2160_60fps.mp4" 
+                title="EcoConnect VR Demo" 
+                class="w-full h-full absolute top-0 left-0"
+                allow="autoplay; loop" 
+                frameborder="0" 
+                allowfullscreen></iframe>
       </div>
     </div>
   </section>
@@ -108,45 +106,40 @@
   <section class="py-16 px-4 bg-white" id="tours">
     <div class="max-w-6xl mx-auto">
       <h2 class="text-2xl md:text-3xl font-bold text-center mb-2">Popular Virtual Tours</h2>
-      <p class="text-gray-600 text-center mb-8 max-w-2xl mx-auto">
-        Preview these breathtaking destinations from the comfort of your home
-      </p>
+      <p class="text-gray-600 text-center mb-8 max-w-2xl mx-auto">Preview these breathtaking destinations from the comfort of your home</p>
       
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <!-- Tour 1 -->
         <div class="rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow">
           <img src="src/the-beauty-of-tinuy-an.jpg" alt="Tinuy-an Falls" class="w-full h-48 object-cover">
           <div class="p-6">
             <h3 class="text-xl font-bold mb-2">Tinuy-an Falls</h3>
             <p class="text-gray-600 text-sm mb-4">Witness the majestic 3-tiered waterfall known as the "Niagara of the Philippines"</p>
             <div class="flex justify-between items-center">
-              <span class="font-bold text-teal-600">$9.99</span>
+              <span class="font-bold text-teal-600">Open</span>
               <a href="#" class="text-sm font-medium text-teal-600 hover:underline">View Tour →</a>
             </div>
           </div>
         </div>
         
-        <!-- Tour 2 -->
         <div class="rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow">
           <img src="src/Hinatuan_enchanted_river.jpg" alt="Enchanted River" class="w-full h-48 object-cover">
           <div class="p-6">
             <h3 class="text-xl font-bold mb-2">Enchanted River</h3>
             <p class="text-gray-600 text-sm mb-4">Explore the mysteriously deep blue waters of Hinatuan's legendary river</p>
             <div class="flex justify-between items-center">
-              <span class="font-bold text-teal-600">$12.99</span>
+              <span class="font-bold text-teal-600">Open</span>
               <a href="#" class="text-sm font-medium text-teal-600 hover:underline">View Tour →</a>
             </div>
           </div>
         </div>
         
-        <!-- Tour 3 -->
         <div class="rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow">
           <img src="src/cloud9-e1405131118605-1000x747.webp" alt="Siargao" class="w-full h-48 object-cover">
           <div class="p-6">
             <h3 class="text-xl font-bold mb-2">Siargao Island</h3>
             <p class="text-gray-600 text-sm mb-4">Experience the famous surf spots and laidback island vibe</p>
             <div class="flex justify-between items-center">
-              <span class="font-bold text-teal-600">$14.99</span>
+              <span class="font-bold text-teal-600">Open</span>
               <a href="#" class="text-sm font-medium text-teal-600 hover:underline">View Tour →</a>
             </div>
           </div>
@@ -154,22 +147,18 @@
       </div>
       
       <div class="text-center mt-10">
-        <a href="#" class="inline-block bg-teal-500 text-white px-8 py-3 rounded-full font-bold btn-hover">
-          See All 25+ Tours
-        </a>
+        <a href="#" class="inline-block bg-teal-500 text-white px-8 py-3 rounded-full font-bold btn-hover">See All 25+ Tours</a>
       </div>
     </div>
   </section>
 
-  <!-- Testimonial -->
+  <!-- Testimonial Section -->
   <section class="py-16 px-4 bg-teal-50">
     <div class="max-w-3xl mx-auto text-center">
       <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-teal-400 mx-auto mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
       </svg>
-      <p class="text-xl italic mb-6">
-        "The VR tour helped me discover hidden spots in Siargao I would've missed. When I actually visited, I felt like I already knew the island!"
-      </p>
+      <p class="text-xl italic mb-6">"The VR tour helped me discover hidden spots in Siargao I would've missed. When I actually visited, I felt like I already knew the island!"</p>
       <div class="flex items-center justify-center">
         <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Maria S." class="w-12 h-12 rounded-full mr-4">
         <div class="text-left">
@@ -180,23 +169,19 @@
     </div>
   </section>
 
-  <!-- Final CTA -->
+  <!-- Final Call-to-Action Section -->
   <section class="py-16 px-4 bg-teal-600 text-white text-center">
     <div class="max-w-2xl mx-auto">
       <h2 class="text-2xl md:text-3xl font-bold mb-4">Ready to Explore Caraga Virtually?</h2>
       <p class="mb-8 text-teal-100">Start with our free demo tour or browse our full collection</p>
       <div class="flex flex-col sm:flex-row justify-center gap-4">
-        <a href="#demo" class="bg-white text-teal-600 px-8 py-3 rounded-full font-bold btn-hover">
-          Try Free Demo
-        </a>
-        <a href="#tours" class="bg-black bg-opacity-20 text-white px-8 py-3 rounded-full font-bold btn-hover border border-white border-opacity-30">
-          Browse All Tours
-        </a>
+        <a href="#demo" class="bg-white text-teal-600 px-8 py-3 rounded-full font-bold btn-hover">Try Free Demo</a>
+        <a href="#tours" class="bg-black bg-opacity-20 text-white px-8 py-3 rounded-full font-bold btn-hover border border-white border-opacity-30">Browse All Tours</a>
       </div>
     </div>
   </section>
 
-  <!-- Simple Footer with Contact -->
+  <!-- Simple Footer -->
   <footer class="bg-gray-800 text-white py-12 px-4">
     <div class="max-w-6xl mx-auto">
       <div class="grid md:grid-cols-3 gap-8">
